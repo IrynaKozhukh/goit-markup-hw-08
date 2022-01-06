@@ -1,0 +1,42 @@
+.softskills__title-text {
+  width: 696px;
+  @include margin(0, auto, 30px, auto);
+  @include padding(0, 0, 0, 0);
+  color: var(--hero-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.softskills__title {
+  @extend %font;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.softskills__after-title {
+  @extend %font;
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+.softskills__list {
+  @extend %align-list;
+  text-align: left;
+}
+
+.softskills__list > .softskills__pre-title:not(:last-child) {
+  margin-right: 30px;
+}
+.softskills__list > .item {
+  width: 270px;
+}
+.softskills__link {
+  @extend %align-list;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}

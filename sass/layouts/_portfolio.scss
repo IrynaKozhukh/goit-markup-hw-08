@@ -1,0 +1,91 @@
+.portfolio {
+    background-color: var(--hero-color);
+}
+.items {
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+   
+}
+.items {
+  text-align: center;
+}
+.items > .header__item:not(:last-child) {
+  margin-right: 50px;
+}
+.items > .portfolio__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.items > .portfolio__item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio__item {
+    background-color: var(--hero-color);
+    .header__list > &:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 30px;
+    }
+}
+.portfolio__cadr-overflow {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio__card-text {
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  text-align: left;
+  background-color: rgba(33, 150, 243, 0.9);;
+  color: var(--third-text-color);
+  transform: translateY(100%);
+  transition: transform var(--duration);
+  overflow: auto;
+}
+.portfolio__item:hover .portfolio__card-text {
+  transform: translateY(0);
+}
+
+.portfolio__card-body {
+    padding-top: 30px;
+    padding-bottom: 32px;
+    .portfolio__card & {
+        border: 1px solid #eeeeee;
+        border-top: 1px solid transparent;
+        @include padding(20px, 24px, 20px, 24px);
+        text-align: left;
+        transition: box-shadow var(--duration) linear;
+        &:hover {
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+.portfolio__li {
+    margin-right: 8px; 
+}
+.portfolio__titles {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--first-text-color);
+}
+.portfolio__after-titles {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}

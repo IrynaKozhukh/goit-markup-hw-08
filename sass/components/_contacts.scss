@@ -1,0 +1,9 @@
+.contacts {
+  color: var(--second-text-color);
+  transition: color var(--duration) linear;
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

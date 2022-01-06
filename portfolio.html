@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+
+<!-- Шапка сайта -->
+
+<header class="header">
+    <div class="container header__navigation">
+        <nav class="header__navigation">
+        <a class="logo link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/index.html"><span class="header__logo">Web</span>Studio</a>
+        <ul class="header__list list">
+            <li class="header__item"><a href="https://irynakozhukh.github.io/goit-markup-hw-07-2/index.html" class="header__link link">Студия</a></li>
+            <li class="header__item"><a href="https://irynakozhukh.github.io/goit-markup-hw-07-2/portfolio.html" class="header__link link current">Портфолио</a></li>
+            <li class="header__item"><a href="https://irynakozhukh.github.io/goit-markup-hw-07-2/" class="header__link link">Контакты</a></li>
+        </ul>
+        </nav>
+        <ul class="list header__list header__link-style">
+            <li class="header__item">
+                <a class="link header__link contacts" href="mailto:info@example.com">
+                    <svg class="envelope">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>info@example.com</a>
+            </li>
+            <li class="header__item">
+                <a class="link header__link contacts" href="tel:+380991111111">
+                    <svg class="smartphone">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>+38 099 111 11 11</a>
+            </li>
+        </ul>
+        </div>
+</header>
+<main>
+<h1 class="softskills__title-text visually-hidden">Портфолио</h1>
+    <!-- Мейн-Батн-->
+
+<section class="section portfolio">
+        <div class="container">
+            <ul class="list filter">
+                <li class="portfolio__li"><button class="portfolio__btn current__btn" type="button">Все</button></li>
+                <li class="portfolio__li"><button class="portfolio__btn" type="button">Веб-сайты</button></li>
+                <li class="portfolio__li"><button class="portfolio__btn" type="button">Приложения</button></li>
+                <li class="portfolio__li"><button class="portfolio__btn" type="button">Дизайн</button></li>
+                <li class="portfolio__li"><button class="portfolio__btn" type="button">Маркетинг</button></li>
+            </ul>
+                <!-- Мейн-Портфолио-->
+
+            <ul class="list items">
+                <li class="portfolio__item">
+                    <div class="portfolio__card">
+                        <a class="link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/portfolio.html">
+                            <div class="portfolio__cadr-overflow">
+                            <img class="images" src="./images/img-1.jpg" alt="Ноутбук с изображениями трех портфолио" width="370" height="294" />
+                            <p class="portfolio__card-text">Технокряк это современная площадка распространения
+                            коронавируса. Компании используют эту платформу для цифрового
+                            шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="portfolio__card-body">
+                                <h2 class="portfolio__titles">Технокряк</h2>
+                                <p class="portfolio__after-titles">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="portfolio__item"> 
+                    <div class="portfolio__card">
+                        <a class="link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/portfolio.html">
+                            <div class="portfolio__cadr-overflow">
+                            <img class="images" src="./images/img-2.jpg" alt="Два баскетболиста в прыжке" width="370" height="294" />
+                            <p class="portfolio__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A ab neque aperiam labore repellat corrupti iure nemo,
+                                distinctio quaerat, accusamus laudantium odit reiciendis delectus eum.</p>
+                            </div>
+                            <div class="portfolio__card-body">
+                                <h2 class="portfolio__titles">Постер<span lang="en"> Orlean vs Golden Star</span></h2>
+                                <p class="portfolio__after-titles">Дизайн</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__card">
+                        <a class="link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/portfolio.html">
+                            <div class="portfolio__cadr-overflow">
+                            <img class="images" src="./images/img-3.jpg" alt="Логотип ресторана Seafood" width="370" height="294" />
+                            <p class="portfolio__card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt totam exercitationem molestias, eveniet sequi,
+                                laudantium velit qui impedit quisquam in? Ipsam, doloremque molestias! Blanditiis, ex accusamus.</p>
+                            </div>
+                            <div class="portfolio__card-body">
+                                <h2 class="portfolio__titles">Ресторан<span lang="en"> Seafood</span></h2>
+                                <p class="portfolio__after-titles">Приложение</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__card">
+                        <a class="link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/portfolio.html">
+                            <div class="portfolio__cadr-overflow">
+                            <img class="images" src="./images/img-4.jpg" alt="Черные наушники" width="370" height="294"/>
+                            <p class="portfolio__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Corporis amet odio quidem asperiores voluptatem aliquam laudantium dolores omnis,
+                                excepturi sint ea nostrum repudiandae et reiciendis.</p>
+                            </div>
+                            <div class="portfolio__card-body">
+                                <h2 class="portfolio__titles">Проект<span lang="en"> Prime</span></h2>
+                                <p class="portfolio__after-titles">Маркетинг</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__card">
+                        <a class="link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/portfolio.html">
+                            <div class="portfolio__cadr-overflow">
+                            <img class="images" src="./images/img-5.jpg" alt="Лежат две коробки белого и коричневого цвета с надписями и логотипами" width="370" height="294"/>
+                            <p class="portfolio__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Corporis amet odio quidem asperiores voluptatem aliquam laudantium dolores omnis,
+                                excepturi sint ea nostrum repudiandae et reiciendis accusamus id aperiam voluptate.</p>
+                            </div>
+                            <div class="portfolio__card-body">
+                                <h2 class="portfolio__titles">Проект<span lang="en"> Boxes</span></h2>
+                                <p class="portfolio__after-titles">Приложение</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__card">
+                        <a class="link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/portfolio.html">
+                            <div class="portfolio__cadr-overflow">
+                            <img class="images" src="./images/img-6.jpg" alt="Монитор с изображением веб-сайта" width="370" height="294"/>
+                            <p class="portfolio__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sequi, impedit quaerat consectetur eum tenetur ea,
+                                et reiciendis voluptas deleniti eligendi inventore asperiores ratione ipsum.</p>
+                            </div>
+                            <div class="portfolio__card-body">
+                                <h2 class="portfolio__titles" lang="en">Inspiration has no Borders</h2>
+                                <p class="portfolio__after-titles">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__card">
+                        <a class="link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/portfolio.html">
+                            <div class="portfolio__cadr-overflow">
+                            <img class="images" src="./images/img-7.jpg" alt="Раскрытый журнал с дизайном в голубо-бело-серых тонах" width="370" height="294"/>
+                            <p class="portfolio__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut perspiciatis ex fugit optio! Quis, quam! Inventore, nemo fuga! 
+                                Veritatis necessitatibus minus quo quibusdam esse voluptatibus.</p>
+                            </div>
+                            <div class="portfolio__card-body">
+                                <h2 class="portfolio__titles">Издание<span lang="en"> Limited Edition</span></h2>
+                                <p class="portfolio__after-titles">Дизайн</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__card">
+                        <a class="link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/portfolio.html">
+                            <div class="portfolio__cadr-overflow">
+                            <img class="images" src="./images/img-8.jpg" alt="Бирка с надписью: LAB EL TAG" width="370" height="294"/>
+                            <p class="portfolio__card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quae repudiandae, 
+                                minima reprehenderit eius autem iste quod amet rerum, officia, sed labore alias eligendi nemo!</p>
+                            </div>
+                            <div class="portfolio__card-body">
+                                <h2 class="portfolio__titles">Проект<span lang="en"> LAB</span></h2>
+                                <p class="portfolio__after-titles">Маркетинг</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__card">
+                        <a class="link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/portfolio.html">
+                            <div class="portfolio__cadr-overflow">
+                            <img class="images" src="./images/img-9.jpg" alt="Ноутбук с изображением веб-сайта Growing Business" width="370" height="294"/>
+                            <p class="portfolio__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Voluptate, architecto et voluptas odio voluptates doloribus optio illum facilis nam explicabo distinctio. 
+                                Quam nemo sapiente enim.</p>
+                            </div>
+                            <div class="portfolio__card-body">
+                                <h2 class="portfolio__titles" lang="en">Growing Business</h2>
+                                <p class="portfolio__after-titles">Приложение</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+</section>
+
+</main>
+<!-- Футер -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__navigation">
+            <a class="logo link footer__logo" href=""><span class="header__logo">Web</span>Studio</a>
+            <address class="address-link">
+                <ul class="footer__link list">
+                    <li><a class="footer__address-color link" href="https://goo.gl/maps/vSzQUJ8hVPghcMWJ7"
+                            target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки,
+                            26</a></li>
+                    <li class="footer__link"><a class="footer__link link"
+                            href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="footer__link"><a class="footer__link link" href="tel:+380991111111">+38 099 111 11
+                            11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <div class="footer__social-icons">
+            <p class="footer__text">присоединяйтесь</p>
+            <ul class="list footer__social-list">
+                <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                        <svg class="footer__icons" width="20" height="20">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                        <svg class="footer__icons" width="20" height="20">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                        <svg class="footer__icons" width="20" height="20">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                        <svg class="footer__icons" width="20" height="20">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <form class="down-contact">
+            <label class="footer__modal">
+                <span class="footer__text">Подпишитесь на рассылку</span>
+                <input class="footer__modal-text" type="user-email" name="email" placeholder="E-mail">
+            </label>
+            <button type="submit" class="button footer__btn">
+                <span class="footer__btn-text">Подписаться</span>
+                <svg class="footer__input-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+</footer>
+</body>
+
+</html>

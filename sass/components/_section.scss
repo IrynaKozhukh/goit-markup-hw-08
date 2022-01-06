@@ -1,0 +1,16 @@
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+    .hero {
+        max-height: 600px;
+        max-width: 1200px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        border: 1px solid transparent;
+    }
+}
+.section-nopaddingtop {
+    padding-top: 0;
+}

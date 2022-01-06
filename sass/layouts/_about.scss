@@ -1,0 +1,35 @@
+
+.about__title {
+    @include margin(0, 0, 50px, 0);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    @extend %align-spacing;
+    color: var(--second-title-color);
+}
+.about__list,
+.about__item {
+    @extend %align-list;
+    text-align: left;
+    position: relative;
+}
+.about__list > .about__item:not(:last-child) {
+    margin-right: 30px;
+}
+.about__item-text {
+    @extend %align-list;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(47, 48, 58, 0.8);
+    color: var(--third-text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    @include padding(0, 0, 0, 0);
+    @include margin(0, 0, 0, 0);
+    @extend %font;
+    line-height: 1.71;
+}

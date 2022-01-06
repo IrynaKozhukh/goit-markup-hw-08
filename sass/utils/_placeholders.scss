@@ -1,0 +1,40 @@
+%align-list {
+    display: flex;
+    align-items: center;
+}
+%font {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+%font-min {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.14;
+}
+%align-spacing {
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+%btn {
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    align-items: center;
+    line-height: 1.87;
+    font-weight: 700;
+    color: var(--third-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+%btn-min {
+    font-family: inherit;
+    font-size: 16px;
+    border: none;
+}
+%bgc-shadow {
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
