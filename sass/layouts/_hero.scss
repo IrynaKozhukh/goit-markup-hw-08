@@ -8,15 +8,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 600px;
-  max-width: 1600px;
+  min-height: 400px;
+  max-width: 100%;
   display: flex;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
 }
 .hero__title {
-  width: 696px;
+  width: 480px;
   @include margin(0, auto, 30px, auto);
   @include padding(0, 0, 0, 0);
   font-weight: 900;

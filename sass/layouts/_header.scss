@@ -1,5 +1,6 @@
 .header {
   border-bottom: 1px solid #ececec;
+ 
 }
 .header__logo {
   color: var(--accent-color);
@@ -23,26 +24,57 @@
   &:focus {
     color: var(--accent-color);
   }
+  
 }
 .header__link-style {
   @extend %font-min;
   color: var(--second-text-color);
+  flex-wrap: wrap;
+
 }
 .current {
   color: var(--accent-color);
 }
 .header__navigation,
 .header__list {
-  @extend %align-list;
-  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  //flex-wrap: wrap;
 }
 .header__item > .link {
-  @extend %align-list;
+  display: flex;
+  
+  @media screen and (max-width: 767px) {
+display: none;
+}
+  @media screen and (min-width: 768px) {
+margin-left: 84px;
+  margin-right: 0;
+  padding-top: -10px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+align-items: baseline;
+margin: 0;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+}
+.header__list > .header__item {
+
+@media screen and (max-width: 479px) {
+display: none;
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1200px) {
+
+}
+}
 .header__list > .header__item:not(:last-child) {
   margin-right: 50px;
+  
 }
 .envelope, .smartphone {
   margin-right: 10px;

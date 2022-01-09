@@ -3,10 +3,14 @@
   background-color: var(--footer-color);
   @extend %align-list;
   & > .container {
+    text-align: center;
+    @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    }
   }
 }
+
 .footer__text {
   margin-bottom: 20px;
   font-weight: 700;
@@ -17,21 +21,26 @@
   display: block;
 }
 .footer__navigation {
-  margin-right: 70px;
   & > .link.logo.footer__logo {
     @include padding(0, 0, 0, 0);
     @include margin(0, 0, 20px, 0);
   }
+  @media screen and (min-width: 1200px) {
+  margin-right: 70px;
+}
 }
 .footer__link {
   font-style: normal;
   font-weight: 400;
   margin-top: 9px;
   margin-bottom: 9px;
+  
   @include padding(0, 0, 0, 0);
   line-height: 1.7;
   @extend %font;
   color: var(--links-color);
+  &:last-child {
+  margin-bottom: 60px;}
 }
 .footer__address-color {
   @include padding(0, 0, 0, 0);
@@ -40,10 +49,13 @@
 }
 .footer__social-icons {
   padding-top: 12px;
-  margin-right: 93px;
+  //margin-right: 93px;
 }
 .footer__social-list {
   display: flex;
+  margin-bottom: 60px;
+  justify-content: center;
+  
 }
 .footer__social-item {
   width: 44px;
@@ -73,10 +85,15 @@
   margin-bottom: 9px;
 }
 .footer__modal {
-  margin-right: 12px;
+  //margin-right: 12px;
+  display: block;
 }
 .footer__modal-text {
-  width: 358px;
+  width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+  
   height: 50px;
   margin-right: 8px;
   padding-left: 16px;
@@ -89,7 +106,16 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 .footer__input-icon {
 fill: var(--second-logo-color);
+}
+.down-contact{
+@media screen and (min-width: 1200px) {
+  margin-left: 93px;
+      display: flex;
+    height: 50px;
+    
+}
 }
