@@ -1233,12 +1233,6 @@ header__menu-list header__menu-item header__menu-link-style social__menu .social
   }
 }
 
-@media screen and (max-width: 768px) {
-  .section {
-    width: 768px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
