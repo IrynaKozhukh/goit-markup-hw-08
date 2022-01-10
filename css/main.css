@@ -1227,12 +1227,6 @@ header__menu-list header__menu-item header__menu-link-style social__menu .social
   text-align: center;
 }
 
-@media screen and (max-width: 360px) {
-  .section {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
