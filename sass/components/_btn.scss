@@ -1,3 +1,20 @@
+//
+.btn__menu {
+display: inline-flex;
+border: none;
+margin: 0;
+padding: 0;
+background-color: transparent;
+.icon-close {
+  display: none;
+}
+}
+.btn__menu.is-open .icon-close {
+  display: block;
+}
+.btn__menu.is-open .icon-menu {
+  display: none;
+}
 .hero__btn {
   @extend %btn;
   @extend %btn-min;

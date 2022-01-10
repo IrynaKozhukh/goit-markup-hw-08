@@ -29,15 +29,17 @@ display: flex;
   margin-bottom: 30px;
 }
 .filter {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    
-    margin-bottom: 40px;
+    display: block;
       @media screen and (max-width: 767px) {
   
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    align-content: space-between;
 }
   @media screen and (min-width: 768px) {
+     display: flex;
   }
   
   @media screen and (max-width: 1199px) {
@@ -102,6 +104,11 @@ display: flex;
 }
 .portfolio__li {
     margin-right: 8px; 
+   
+    
+    @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 .portfolio__titles {
     font-weight: 700;

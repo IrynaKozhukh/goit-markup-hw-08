@@ -217,17 +217,47 @@ body {
 }
 
 .hero {
-  background-color: var(--footer-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroung-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 400px;
-  max-width: 100%;
   display: flex;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 400px;
+  background-color: var(--footer-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/header-png1x.png);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/header-png2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tab/header1x.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tab/header2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header-1x.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header-2x.png);
+  }
 }
 
 .hero__title {
@@ -803,10 +833,23 @@ body {
 }
 
 .filter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 40px;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .filter {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    display: flex;
+  }
 }
 
 .portfolio__item {
@@ -873,6 +916,12 @@ body {
 
 .portfolio__li {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__li {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio__titles {
@@ -966,6 +1015,26 @@ body {
 .container > .link.logo {
   padding: 0;
   margin: 0 0 20px 0;
+}
+
+.btn__menu {
+  display: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.btn__menu .icon-close {
+  display: none;
+}
+
+.btn__menu.is-open .icon-close {
+  display: block;
+}
+
+.btn__menu.is-open .icon-menu {
+  display: none;
 }
 
 .hero__btn {

@@ -26,6 +26,12 @@
             <nav class="header__navigation">
                 <a class="logo link" href="https://irynakozhukh.github.io/goit-markup-hw-07-2/index.html"><span
                         class="header__logo">Web</span>Studio</a>
+                        <button class="btn__menu is-open" aria-expanded="false" js-open-menu>
+                            <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+                            <use class="icon-close" href="./images/icons.svg#icon-close_40px"></use>
+                        </svg>
+                        </button>
                 <ul class="header__list list">
                     <li class="header__item"><a href="https://irynakozhukh.github.io/goit-markup-hw-07-2/index.html"
                             class="header__link link current">Студия</a></li>
@@ -151,8 +157,18 @@
                 <ul class="galery__list list">
                     <li class="galery__item">
                         <div class="galery__style">
-                            <img class="images" src="./images/igor.jpg" alt="Мужчина в очках с бородой улыбается."
-                                width="270" height="260">
+                            <picture>
+                                <source srcset="./images/desktop/igor1x.jpg 1x, ./images/desktop/igor2x.jpg 2x" 
+                                media="(min-width:1200px)" />
+                                <source srcset="./images/tab/igor1x.jpg 1x, ./images/tab/igor2x.jpg 2x" 
+                                media="(min-width:768px)" />
+                                <source srcset="./images/mob/igor1x.jpg 1x, ./images/mob/igor2x.jpg 2x"
+                                media="(min-width:320px)"
+                                />
+                                <img class="images" 
+                                src="./images/igor.jpg" 
+                                alt="Мужчина в очках с бородой улыбается." />
+                            </picture>
                             <div class="galery__card-body">
                                 <h3 class="galery__text">Игорь Демьяненко</h3>
                                 <p class="galery__eng-text" lang="en">Product Designer</p>
@@ -195,8 +211,17 @@
                     </li>
                     <li class="galery__item">
                         <div class="galery__style">
-                            <img class="images" src="./images/olga.jpg" alt="Девушка-блондинка сияет улыбкой."
-                                width="270" height="260">
+                            <picture>
+                                <source srcset="./images/desktop/olga1x.jpg 1x, ./images/desktop/olga2x.jpg 2x" 
+                                media="(min-width:1200px)" />
+                                <source srcset="./images/tab/olga1x.jpg 1x, ./images/tab/olga2x.jpg 2x" 
+                                media="(min-width:768px)" />
+                                <source srcset="./images/mob/olga1x.jpg 1x, ./images/mob/olga2x.jpg 2x" 
+                                media="(min-width:320px)" />
+                                <img class="images" 
+                                src="./images/olga.jpg" 
+                                alt="Девушка-блондинка сияет улыбкой." />
+                            </picture>
                             <div class="galery__card-body">
                                 <h3 class="galery__text">Ольга Репина</h3>
                                 <p class="galery__eng-text" lang="en">Frontend Developer</p>
@@ -238,8 +263,17 @@
                     </li>
                     <li class="galery__item">
                         <div class="galery__style">
-                            <img class="images" src="./images/nikolai.jpg"
-                                alt="Рыжеволосый парень смотрит в сторону илыбаясь." width="270" height="260">
+                            <picture>
+                                <source srcset="./images/desktop/nikolaj1x.jpg 1x, ./images/desktop/nikolaj2x.jpg 2x" 
+                                media="(min-width:1200px)" />
+                                <source srcset="./images/tab/nikolaj1x.jpg 1x, ./images/tab/nikolaj2x.jpg 2x" 
+                                media="(min-width:768px)" />
+                                <source srcset="./images/mob/nikolaj1x.jpg 1x, ./images/mob/nikolaj2x.jpg 2x" 
+                                media="(min-width:320px)" />
+                                <img class="images" 
+                                src="./images/nikolai.jpg" 
+                                alt="Рыжеволосый парень смотрит в сторону илыбаясь." />
+                            </picture>
                             <div class="galery__card-body">
                                 <h3 class="galery__text">Николай Тарасов</h3>
                                 <p class="galery__eng-text" lang="en">Marketing</p>
@@ -281,8 +315,17 @@
                     </li>
                     <li class="galery__item">
                         <div class="galery__style">
-                            <img class="images" src="./images/michail.jpg"
-                                alt="Мужчина в очках подозрительно ухмыляется." width="270" height="260">
+                            <picture>
+                                <source srcset="./images/desktop/michail1x.jpg 1x, ./images/desktop/michail2x.jpg 2x" 
+                                media="(min-width:1200px)" />
+                                <source srcset="./images/tab/michail1x.jpg 1x, ./images/tab/michail2x.jpg 2x" 
+                                media="(min-width:768px)" />
+                                <source srcset="./images/mob/michail1x.jpg 1x, ./images/mob/michail2x.jpg 2x" 
+                                media="(min-width:320px)" />
+                                <img class="images" 
+                                src="./images/michail.jpg" 
+                                alt="Мужчина в очках подозрительно ухмыляется." />
+                            </picture>
                             <div class="galery__card-body">
                                 <h3 class="galery__text">Михаил Ермаков</h3>
                                 <p class="galery__eng-text" lang="en">UI Designer</p>
@@ -501,6 +544,7 @@
 
 </div>
 </div>
+<script src="./js/mob-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 
