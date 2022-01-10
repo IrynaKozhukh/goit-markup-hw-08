@@ -1,30 +1,14 @@
-//
-.btn__menu {
-display: inline-flex;
-border: none;
-margin: 0;
-padding: 0;
-background-color: transparent;
-.icon-close {
-  display: none;
-}
-}
-.btn__menu.is-open .icon-close {
-  display: block;
-}
-.btn__menu.is-open .icon-menu {
-  display: none;
-}
+
 .hero__btn {
   @extend %btn;
   @extend %btn-min;
   @include padding(10px, 32px, 10px, 32px);
-  display: flex;
+  //display: flex;
   text-align: center;
   transition: color var(--duration) linear;
   &:active {
     color: var(--links-color);
-  }
+  }  
 }
 .footer__btn {
   @extend %btn;
