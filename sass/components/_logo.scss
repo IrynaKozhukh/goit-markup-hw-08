@@ -28,8 +28,8 @@
     color: $current-light-color;
   }
 
-  &:hover.logo--header,
-  &:focus.logo--header,
+  &:hover.header__logo,
+  &:focus.header__logo,
   &:hover.logo--footer,
   &:focus.logo--footer {
     color: $accent-color;

@@ -17,11 +17,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+
+    <!-- Шапка сайта -->
+
     <header class="page-header">
       <div class="container">
-        <div class="menu__wrapper">
-          <a class="links logo logo--header" href="./index.html" lang="en">
-            <span class="logo--accent">Web</span>Studio
+        <div class="header__navigation">
+          <a class="link logo header__logo" href="./index.html" lang="en">
+            <span class="logo-accent">Web</span>Studio
           </a>
           <button
             class="button__menu-open js-open-menu"
@@ -40,31 +43,31 @@
               <use href="./images/icons.svg#menu_close_40px"></use>
             </svg>
           </button>
-          <div class="menu__wrapper">
+          <div class="header__navigation">
             <nav class="navigation">
-              <ul class="lists navigation__items">
+              <ul class="list navigation__items">
                 <li class="navigation__item">
                   <a
-                    class="links link__navigation is-current"
+                    class="link navigation__link  is-current"
                     href="./index.html"
                     >Студия</a
                   >
                 </li>
                 <li class="navigation__item">
-                  <a class="links link__navigation" href="./portfolio.html"
+                  <a class="link navigation__link" href="./portfolio.html"
                     >Портфолио</a
                   >
                 </li>
                 <li class="navigation__item">
-                  <a class="links link__navigation" href="">Контакты</a>
+                  <a class="link navigation__link" href="">Контакты</a>
                 </li>
               </ul>
             </nav>
 
-            <div class="contacts__thumb">
-              <ul class="lists contacts">
+            <div class="contact__link">
+              <ul class="list contacts">
                 <li class="contacts__item">
-                  <a class="links link__contacts" href="tel:+380961111111">
+                  <a class="link link__contacts" href="tel:+380961111111">
                     <svg class="smartphone">
                       <use href="./images/icons.svg#smartphone"></use>
                     </svg>
@@ -73,7 +76,7 @@
                 </li>
                 <li class="contacts__item">
                   <a
-                    class="links link__contacts mail"
+                    class="link link__contacts mail"
                     href="mailto:info@devstudio.com"
                   >
                     <svg class="envelope">
@@ -83,18 +86,18 @@
                   </a>
                 </li>
               </ul>
-              <ul class="lists social__menu">
+              <ul class="list social__menu">
                 <li class="social__menu-item">
-                  <a href="" class="links link__social-menu">Instagram</a>
+                  <a href="" class="link link__social-menu">Instagram</a>
                 </li>
                 <li class="social__menu-item">
-                  <a href="" class="links link__social-menu">Twitter</a>
+                  <a href="" class="link link__social-menu">Twitter</a>
                 </li>
                 <li class="social__menu-item">
-                  <a href="" class="links link__social-menu">Facebook</a>
+                  <a href="" class="link link__social-menu">Facebook</a>
                 </li>
                 <li class="social__menu-item">
-                  <a href="" class="links link__social-menu">LinkedIn</a>
+                  <a href="" class="link link__social-menu">LinkedIn</a>
                 </li>
               </ul>
             </div>
@@ -104,7 +107,9 @@
     </header>
 
     <main>
-      <!-- Hero -->
+
+      <!-- Герой -->
+
       <section class="section hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -114,11 +119,12 @@
         </div>
       </section>
 
-      <!-- Feature -->
+      <!--СофтСкилы компании-->
+
       <section class="section">
         <div class="container">
-          <h2 class="hidden">Особенности</h2>
-          <ul class="lists feature__items">
+          <h2 class="hidden">Преимущества в сотрудничестве</h2>
+          <ul class="list feature__items">
             <li class="feature__item">
               <div class="feature__thumb">
                 <svg class="antenna">
@@ -174,11 +180,12 @@
         </div>
       </section>
 
-      <!-- About -->
+      <!--Эбаут-->
+
       <section class="section section__about">
         <div class="container">
           <h2 class="about__heading">Чем мы занимаемся</h2>
-          <ul class="lists about__items">
+          <ul class="list about__items">
             <li class="about__item">
               <img
                 class="images"
@@ -187,7 +194,8 @@
                   ./images/about-img1@2x.jpg 2x
                 "
                 src="./images/about-img1.jpg"
-                alt="Руки на клавиатуре, планшет и часть монитора"
+                alt="разработчик пишет программу; на столе лежит проект, 
+            клавиатура, планшет, очки, тетрадь с карандашем, стоят два монитора."
                 width="370"
                 height="294"
               />
@@ -202,7 +210,7 @@
                   ./images/about-img2@2x.jpg 2x
                 "
                 src="./images/about-img2.jpg"
-                alt="В левой руке мобильный телефон, правая рука на тачпаде ноутбука. Ноутбук, на экране которого макеты разметки для мобильного телефона"
+                alt="Разработчик мобильных приложений держит в руке смартфон смотря на экран монитора."
                 width="370"
                 height="294"
               />
@@ -217,7 +225,7 @@
                   ./images/about-img3@2x.jpg 2x
                 "
                 src="./images/about-img3.jpg"
-                alt="Левая рука, в которой планшет, на экране которого цветовая палитра"
+                alt="Дизайнер держит в руке планшет, на котором изображена палитра цветов."
                 width="370"
                 height="294"
               />
@@ -232,7 +240,7 @@
         <div class="container">
           <h2 class="team__heading">Наша команда</h2>
 
-          <ul class="lists team__cards">
+          <ul class="list team__cards">
             <li class="team__card">
               <picture>
                 <source
@@ -253,14 +261,14 @@
                 <img
                   class="images"
                   src="./images/team-img-igor@3x.jpg"
-                  alt="Игорь Демьяненко"
+                  alt="Мужчина в очках с бородой улыбается."
                 />
               </picture>
 
               <div class="team__card-thumb">
                 <h3 class="team__card-title">Игорь Демьяненко</h3>
                 <p class="team__card-text" lang="en">Product Designer</p>
-                <ul class="lists social">
+                <ul class="list social">
                   <li class="social__item">
                     <a class="link__social" href="">
                       <svg class="icon__social">
@@ -313,14 +321,14 @@
                 <img
                   class="images"
                   src="./images/team-img-olga@3x.jpg"
-                  alt="Ольга Репина"
+                  alt="Девушка-блондинка сияет улыбкой."
                 />
               </picture>
 
               <div class="team__card-thumb">
                 <h3 class="team__card-title">Ольга Репина</h3>
                 <p class="team__card-text" lang="en">Frontend Developer</p>
-                <ul class="lists social">
+                <ul class="list social">
                   <li class="social__item">
                     <a class="link__social" href="">
                       <svg class="icon__social">
@@ -373,14 +381,14 @@
                 <img
                   class="images"
                   src="./images/team-img-nikolay@3x.jpg"
-                  alt="Николай Тарасов"
+                  alt="Рыжеволосый парень смотрит в сторону илыбаясь."
                 />
               </picture>
 
               <div class="team__card-thumb">
                 <h3 class="team__card-title">Николай Тарасов</h3>
                 <p class="team__card-text" lang="en">Marketing</p>
-                <ul class="lists social">
+                <ul class="list social">
                   <li class="social__item">
                     <a class="link__social" href="">
                       <svg class="icon__social">
@@ -433,14 +441,14 @@
                 <img
                   class="images"
                   src="./images/team-img-mikl@3x.jpg"
-                  alt="Михаил Ермаков"
+                  alt="Мужчина в очках подозрительно ухмыляется."
                 />
               </picture>
 
               <div class="team__card-thumb">
                 <h3 class="team__card-title">Михаил Ермаков</h3>
                 <p class="team__card-text" lang="en">UI Designer</p>
-                <ul class="lists social">
+                <ul class="list social">
                   <li class="social__item">
                     <a class="link__social" href="">
                       <svg class="icon__social">
@@ -476,12 +484,12 @@
         </div>
       </section>
 
-      <!-- Clients -->
+      <!-- Клиэнтс -->
       <section class="section">
         <div class="container">
           <h2 class="clients__heading">Постоянные клиенты</h2>
 
-          <ul class="lists clients">
+          <ul class="list clients">
             <li class="clients__list">
               <a class="clients__item" href="">
                 <svg class="icon__client">
@@ -529,45 +537,38 @@
       </section>
     </main>
 
+<!-- Футер -->
+
     <footer class="footer">
       <div class="container">
         <div class="footer-tablet">
           <div class="footer__thumb">
-            <!-- Лого -->
-            <a class="links logo logo--footer" href="./index.html" lang="en">
-              <span class="logo--accent">Web</span>
-              Studio
-            </a>
-
-            <!-- адрес -->
+            <a class="link logo logo--footer" href="./index.html" lang="en">
+              <span class="logo-accent">Web</span>Studio</a>
             <address>
               <a
-                class="links footer__address"
+                class="link footer__address"
                 href="https://goo.gl/maps/VM6gPYjPhEStrqMR6"
                 target="_blank"
                 rel="noopener, nofollow, noreferrer"
               >
                 г. Киев, пр-т Леси Украинки, 26
               </a>
-
-              <!-- Почта и телефон -->
-              <ul class="lists">
+              <ul class="list">
                 <li class="footer__item">
-                  <a class="links footer__link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                  <a class="link footer__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a>
                 </li>
                 <li class="footer__item">
-                  <a class="links footer__link" href="tel:+380961111111"
-                    >+38 096 111 11 11</a
-                  >
+                  <a class="link footer__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a>
                 </li>
               </ul>
             </address>
           </div>
           <div class="footer__thumb footer__thumb--social">
             <strong class="footer__text">Присоединяйтесь</strong>
-            <ul class="lists social">
+            <ul class="list social">
               <li class="social__item">
                 <a class="link__social link__social--footer" href="">
                   <svg class="icon__social">
