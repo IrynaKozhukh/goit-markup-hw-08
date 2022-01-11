@@ -1,25 +1,4 @@
-@import './base/reset';
-@import './base/common';
-
-@import './utils/variables';
-@import './utils/hidden';
-@import './utils/placeholders';
-@import './utils/mixins';
-
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/softskills';
-@import './layouts/about';
-@import './layouts/galery';
-@import './layouts/clients';
-@import './layouts/footer';
-@import './layouts/portfolio';
-
-@import './components/social';
-@import './components/container';
-@import './components/btn';
-@import './components/contacts';
-@import './components/logo';
-@import './components/section';
-@import './components/images';
-@import './components/modal';
+@import "./utils/main-utils";
+@import "./mixins/main-mixins";
+@import "./components/main-components";
+@import "./layouts/main-layouts";

@@ -1,16 +1,29 @@
-:root {
-  --first-text-color: #212121;
-  --second-text-color: #757575;
-  --third-text-color: #ffffff;
-  --first-logo-color: #000000;
-  --second-logo-color: #ffffff;
-  --accent-color: #2196f3;
-  --hero-color: #ffffff;
-  --main-title-color: #212121;
-  --second-title-color: #212121;
-  --footer-color: #2f303a; 
-  --galery-color: #f5f4fa;
-  --links-color: rgba(255, 255, 255, 0.6);
-  --function: cubic-bezier(0.4, 0, 0.2, 1);
-  --duration: 250ms;
-}
+$current-font: Roboto, sans-serif;
+$logo-font: Raleway, sans-serif;
+
+$current-light-color: #ffffff;
+$current-dark-color: #000000;
+$minor-background-color: #2f303a;
+$card-background-color: rgba(47, 48, 58, 0.8);
+$thumb-background-color: #f5f4fa;
+
+$line-color: #ececec;
+$line-social-color: rgba(33, 33, 33, 0.2);
+$border-color: #eeeeee;
+
+$current-text-color: #757575;
+$current-title-color: #212121;
+$current-placeholder-color: rgba(117, 117, 117, 0.5);
+$accent-color: #2196f3;
+$minor-accent-color: #188ce8;
+
+$social-passive-color: #afb1b8;
+
+$footer-link-color: rgba(255, 255, 255, 0.6);
+$social-passive-background-color: rgba(255, 255, 255, 0.1);
+
+$backdrop-overlay-color: rgba(0, 0, 0, 0.2);
+$overlay-card-color: rgba(33, 150, 243, 0.9);
+
+$duration: 250ms;
+$function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,0 +1,102 @@
+.icon__menu {
+  @include icon(40px, 40px);
+  @include transition(color, $duration, $function);
+}
+
+.icon__menu-close {
+  @include icon(40px, 40px);
+  @include transition(color, $duration, $function);
+}
+
+.envelope {
+  @include icon(16px, 12px);
+  margin-right: 8px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.smartphone {
+  @include icon(10px, 16px);
+  margin-right: 8px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.antenna,
+.clock,
+.diagram,
+.astronaut {
+  @include icon(70px, 70px);
+
+  --current-icon-color: #{$current-title-color};
+  --accent-icon-color: #{$accent-color};
+}
+
+.icon__social {
+  @include icon(20px, 20px);
+}
+
+.icon__client {
+  @include icon(106px, 60px);
+}
+
+.icon__send {
+  @include icon(24px, 24px);
+
+  &--append {
+    margin-left: 10px;
+  }
+}
+
+.icon__close {
+  @include icon(18px, 18px);
+}
+
+.icon__modal {
+  @include icon(18px, 18px);
+
+  &--position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(12px, 28px);
+
+    transition: fill $duration $function;
+  }
+
+  .form__input:focus-visible + &,
+  .form__input:focus + &,
+  .form__textarea:focus-visible + &,
+  .form__textarea:focus + & {
+    fill: $accent-color;
+  }
+}
+
+.icon__check {
+  @include icon(16px, 15px);
+
+  &--state {
+    margin-right: 7px;
+
+    border: 2px solid $current-title-color;
+    border-radius: 4px;
+    background-color: $current-light-color;
+    transition-property: background-color, border;
+    transition-duration: $duration;
+    transition-timing-function: $function;
+
+    .form__checkbox:checked + & {
+      border: 2px solid transparent;
+      background-color: $accent-color;
+    }
+
+    .form__label:last-of-type:hover > &,
+    .form__label:last-of-type:focus-within > & {
+      border: 2px solid $accent-color;
+    }
+  }
+}
