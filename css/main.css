@@ -186,21 +186,21 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__logo {
+.logo--header {
   padding-top: 16px;
   padding-bottom: 16px;
   color: #000000;
 }
 
 @media screen and (min-width: 768px) {
-  .header__logo {
+  .logo--header {
     padding: 26px 0;
     margin-right: 76px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header__logo {
+  .logo--header {
     margin-right: 100px;
   }
 }
@@ -210,11 +210,11 @@
   color: #ffffff;
 }
 
-.logo:hover.header__logo, .logo:focus.header__logo, .logo:hover.logo--footer, .logo:focus.logo--footer {
+.logo:hover.logo--header, .logo:focus.logo--header, .logo:hover.footer__logo, .logo:focus.footer__logo {
   color: #2196f3;
 }
 
-.logo-accent {
+.logo--accent {
   color: #2196f3;
 }
 
@@ -1126,7 +1126,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
-  
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
 
 @media screen and (min-width: 768px) {

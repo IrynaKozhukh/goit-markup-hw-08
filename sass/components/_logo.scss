@@ -28,10 +28,10 @@
     color: $current-light-color;
   }
 
-  &:hover.header__logo,
-  &:focus.header__logo,
-  &:hover.logo--footer,
-  &:focus.logo--footer {
+  &:hover.logo--header,
+  &:focus.logo--header,
+  &:hover.footer__logo,
+  &:focus.footer__logo {
     color: $accent-color;
   }
 
